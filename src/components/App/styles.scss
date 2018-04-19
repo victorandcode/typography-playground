@@ -1,0 +1,67 @@
+@import '../variables.scss';
+
+.App {
+  width: 60em;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.App__settingsTitle {
+  text-align: center;
+}
+
+.App__btnOpenSettings {
+  background: none;
+  border: none;
+  cursor: pointer;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.App__btnCloseSettings {
+  background: none;
+  border: none;
+  font-size: 2em;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.App__settingsContent {
+  background: #fff;
+  border: 1px solid #3d3d3d;
+  bottom: 0;
+  left: 0;
+  overflow-y: scroll;
+  padding: 1em;
+  position: fixed;
+  top: initial;
+  width: 100%;
+  z-index: 9;
+
+  &.opened {
+    top: 50vh;
+  }
+}
+
+.App__settingsOverlay {
+  background: rgba(0, 0, 0, .2);
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+@media(min-width: $min-sm-width) {
+  .App__settingsColumn {
+    display: inline-block;
+    min-width: 300px;
+    padding: 1em;
+    width: 50%;
+  }
+}

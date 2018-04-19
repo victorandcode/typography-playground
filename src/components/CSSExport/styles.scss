@@ -1,0 +1,27 @@
+.CSSExport {
+    display: inline-block;
+}
+
+.CSSExport__cta {
+    background: rgba(255, 255, 255, .8);
+    border: 1px solid #2e2e2e;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    padding: 3px;
+    position: relative;
+}
+
+.CSSExport__innerText {
+    margin-left: 5px;
+}
+
+.CSSExport__successMsg {
+    background: rgba(0, 0, 0, .7);
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    left: 100%;
+    margin-left: 5px;
+    padding: 4px;
+}

@@ -1,0 +1,63 @@
+@import '../variables.scss';
+
+.TextSettings {
+  input[type=range],
+  input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 300px;
+    height: 1px;
+    background: #dcdcdc;
+    border: none;
+    border-radius: 3px;
+  }
+
+  input[type=range]::-webkit-slider-thumb {
+    border: none;
+    cursor: pointer;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #2a2f33;
+    margin-top: -8px;
+  }
+
+  input[type=range]:focus {
+    outline: none;
+  }
+
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #dcdcdc;
+  }
+}
+
+.TextSettings h2 {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.TextSettings select {
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    padding: 0.375rem 0.75rem;
+}
+
+.TextSettings textarea {
+  resize: none;
+  vertical-align: top;
+}
+
+.TextSettings-formGroup {
+    line-height: 2em;
+}
+
+.TextSettings-formGroup label {
+  display: inline-block;
+}
+
+.TextSettings-formGroupColumn{
+    width: 50%;
+}
