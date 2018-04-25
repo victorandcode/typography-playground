@@ -4,9 +4,18 @@
   width: 60em;
   max-width: 100%;
   margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.App__headerTitle {
+  font-size: 2em;
+  font-weight: 700;
+  line-height: 2em;
 }
 
 .App__settingsTitle {
+  font-size: 1.5em;
+  font-weight: 700;
   text-align: center;
 }
 
@@ -24,6 +33,7 @@
 .App__btnCloseSettings {
   background: none;
   border: none;
+  cursor: pointer;
   font-size: 2em;
   position: absolute;
   right: 0;

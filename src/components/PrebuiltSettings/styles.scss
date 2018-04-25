@@ -1,3 +1,9 @@
+@import '../mixins.scss';
+
+.PrebuiltSettings__title {
+    @include subtitle();
+}
+
 .PrebuiltSettings__setting {
     display: inline-block;
     margin-right: 10px;

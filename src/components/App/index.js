@@ -91,7 +91,7 @@ class App extends Component {
     return (
       <div className="App">
         <header>
-          <h1>Type Playground</h1>
+          <h1 className="App__headerTitle">Type Playground</h1>
         </header>
         <main>
           <CustomText text={this.state.titleText} settings={this.state.titleSettings}/>

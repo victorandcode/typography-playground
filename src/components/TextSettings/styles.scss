@@ -1,4 +1,9 @@
+@import '../mixins.scss';
 @import '../variables.scss';
+
+.TextSettings__title {
+  @include subtitle();
+}
 
 .TextSettings {
   input[type=range],
@@ -55,9 +60,27 @@
 }
 
 .TextSettings-formGroup label {
-  display: inline-block;
+  display: block;
 }
 
-.TextSettings-formGroupColumn{
+.TextSettings-formGroup {
+  select, input, textarea {
+    width: 100%;
+  }
+}
+
+@media(min-width: $min-sm-width) {
+  .TextSettings-formGroup label {
+    display: inline-block;
+  }
+
+  .TextSettings-formGroup {
+    select, input, textarea {
+      width: auto;
+    }
+  }
+
+  .TextSettings-formGroupColumn{
     width: 50%;
+  }
 }

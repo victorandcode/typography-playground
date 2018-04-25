@@ -6,7 +6,7 @@ class PrebuiltSettings extends React.Component {
     render() {
         return (
             <button 
-                className="PrebuiltSettings"
+                className="PrebuiltSetting"
                 onClick={this.props.onClick}>{this.props.title}</button>
         )
     }

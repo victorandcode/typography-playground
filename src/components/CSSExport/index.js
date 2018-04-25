@@ -41,17 +41,20 @@ class CSSExport extends React.Component {
         return (
             <div className="CSSExport">
                 <CopyToClipboard 
-                    className="CSSExport__cta"
                     text={this.getText()}
                     onCopy={() => this.triggerSuccess()}>
                     <span>
-                        <i className="far fa-copy"></i>
-                        <span className="CSSExport__innerText">Copy CSS</span>
+                        {!this.state.showingCopyMessage && 
+                            <span className="CSSExport__ctaWaiting">
+                                <i className="far fa-copy"></i>
+                                <span className="CSSExport__innerText">Copy CSS</span>
+                            </span>
+                        }
+                        {this.state.showingCopyMessage && 
+                            <span className="CSSExport__ctaActive">Copied!</span>
+                        }
                     </span>
                 </CopyToClipboard>
-                {this.state.showingCopyMessage && 
-                    <span className="CSSExport__successMsg">Copied!</span>
-                }
             </div>
         )
     }

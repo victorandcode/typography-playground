@@ -8,7 +8,7 @@ class TextSettings extends React.Component {
         return (
             <div className="TextSettings">
                 <div>
-                    <h2>{this.props.title}</h2>
+                    <h2 className="TextSettings__title">{this.props.title}</h2>
                     <CSSExport settings={this.props.settings}/>
                 </div>
                 <div className="TextSettings-formGroup">
@@ -51,7 +51,7 @@ class TextSettings extends React.Component {
                         value={this.props.settings.fontSize.value} 
                         min="0.5"
                         max="5"
-                        step="0.5"
+                        step="0.1"
                         onChange={(e) => this.props.onFontSizeUpdate(e.target.value, 'em')}/>
                 </div>
                 <div className="TextSettings-formGroup">
@@ -78,7 +78,7 @@ class TextSettings extends React.Component {
                         type="range" 
                         min="0"
                         max="2.5"
-                        step="0.2"
+                        step="0.1"
                         value={this.props.settings.lineHeight.value}
                         onChange={(e) => this.props.onLineHeightUpdate(e.target.value, 'em')}/>
                 </div>

@@ -8,7 +8,7 @@ class PrebuiltSettings extends React.Component {
     render() {
         return (
             <div>
-                <h2>Prebuilt Settings</h2>
+                <h2 className="PrebuiltSettings__title">Prebuilt Settings</h2>
                 <div className="PrebuiltSettings__setting">
                     <PrebuiltSetting title="Default" onClick={() => this.props.updateFn(SETTINGS_DEFAULT)}/>
                 </div>
