@@ -4,6 +4,9 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   margin: 0 auto;
   overflow-x: hidden; }
 
+.App__contentWrapper {
+  padding: 1em 1em 4em 1em; }
+
 .App__headerTitle {
   font-size: 2em;
   font-weight: 700;
@@ -112,14 +115,12 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 .TextSettings-formGroup label {
   display: block; }
 
-.TextSettings-formGroup select, .TextSettings-formGroup input, .TextSettings-formGroup textarea {
+.TextSettings-formGroupColumn {
   width: 100%; }
 
 @media (min-width: 768px) {
   .TextSettings-formGroup label {
     display: inline-block; }
-  .TextSettings-formGroup select, .TextSettings-formGroup input, .TextSettings-formGroup textarea {
-    width: auto; }
   .TextSettings-formGroupColumn {
     width: 50%; } }
 .CSSExport {
@@ -161,4 +162,4 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   display: inline-block;
   margin-right: 10px; }
 
-/*# sourceMappingURL=main.c69638b3.css.map*/
+/*# sourceMappingURL=main.6045d9ab.css.map*/
