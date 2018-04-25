@@ -5,7 +5,10 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   overflow-x: hidden; }
 
 .App__contentWrapper {
-  padding: 1em 1em 4em 1em; }
+  padding: 1em 1em 6em 1em; }
+
+.App__overflowHidden {
+  overflow: hidden; }
 
 .App__headerTitle {
   font-size: 2em;
@@ -162,4 +165,4 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   display: inline-block;
   margin-right: 10px; }
 
-/*# sourceMappingURL=main.6045d9ab.css.map*/
+/*# sourceMappingURL=main.ed6adc09.css.map*/
