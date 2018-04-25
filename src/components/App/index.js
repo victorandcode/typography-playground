@@ -90,59 +90,66 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header>
-          <h1 className="App__headerTitle">Type Playground</h1>
-        </header>
         <main>
-          <CustomText text={this.state.titleText} settings={this.state.titleSettings}/>
-          <hr/>
-          <CustomText text={this.state.bodyText} settings={this.state.bodySettings}/>
-          <div
-            className="App__settings">
-            {this.state.showingSettings &&
+          <section className="App__contentWrapper">
+            <header>
+              <h1 className="App__headerTitle">Type Playground</h1>
+            </header>
+            <CustomText text={this.state.titleText} settings={this.state.titleSettings}/>
+            <hr/>
+            <CustomText text={this.state.bodyText} settings={this.state.bodySettings}/>
+          </section>
+          <article>
+            <div
+              className="App__settings">
+              {this.state.showingSettings &&
+                <div 
+                  className="App__settingsOverlay" 
+                  onClick={() => this.toggleShowingSettings(false)}/>
+              }
               <div 
-                className="App__settingsOverlay" 
-                onClick={() => this.toggleShowingSettings(false)}/>
-            }
-            <div 
-              className={this.getSettingsContentClassNames()}
-              >
-              {!this.state.showingSettings && 
-                <div>
-                  <h2 className="App__settingsTitle">SETTINGS</h2>
-                  <button 
-                    className="App__btnOpenSettings"
-                    onClick={() => this.toggleShowingSettings(true)}/>
-                </div>
-              }
-              {this.state.showingSettings && 
-                <div>
-                  <button 
-                    className="App__btnCloseSettings"
-                    onClick={() => this.toggleShowingSettings(false)}>
-                    <i className="far fa-times-circle"></i>
-                  </button>
-                  <div className="App__settingsColumn">
-                    <TextSettings 
-                      title="Title settings" 
-                      text={this.state.titleText}
-                      settings={this.state.titleSettings} 
-                      {...this.getUpdateHandlers('titleSettings', 'titleText')}/>
+                className={this.getSettingsContentClassNames()}
+                >
+                {!this.state.showingSettings && 
+                  <div>
+                    <h2 className="App__settingsTitle">SETTINGS</h2>
+                    <button 
+                      className="App__btnOpenSettings"
+                      onClick={() => this.toggleShowingSettings(true)}/>
                   </div>
-                  <div className="App__settingsColumn">
-                    <TextSettings 
-                      title="Body settings" 
-                      text={this.state.bodyText}
-                      settings={this.state.bodySettings} 
-                      {...this.getUpdateHandlers('bodySettings', 'bodyText')}/>
+                }
+                {this.state.showingSettings && 
+                  <div>
+                    <button 
+                      className="App__btnCloseSettings"
+                      onClick={() => this.toggleShowingSettings(false)}>
+                      <i className="far fa-times-circle"></i>
+                    </button>
+                    <div className="App__settingsColumn">
+                      <TextSettings 
+                        title="Title settings" 
+                        text={this.state.titleText}
+                        settings={this.state.titleSettings} 
+                        {...this.getUpdateHandlers('titleSettings', 'titleText')}/>
+                    </div>
+                    <div className="App__settingsColumn">
+                      <TextSettings 
+                        title="Body settings" 
+                        text={this.state.bodyText}
+                        settings={this.state.bodySettings} 
+                        {...this.getUpdateHandlers('bodySettings', 'bodyText')}/>
+                    </div>
+                    <hr/>
+                    <PrebuiltSettings updateFn={this.updateSettings}/>
                   </div>
-                  <hr/>
-                  <PrebuiltSettings updateFn={this.updateSettings}/>
-                </div>
-              }
+                }
+              </div>
             </div>
-          </div>
+          </article>
         </main>
+        <section>
+
+        </section>
       </div>
     );
   }

@@ -63,21 +63,13 @@
   display: block;
 }
 
-.TextSettings-formGroup {
-  select, input, textarea {
-    width: 100%;
-  }
+.TextSettings-formGroupColumn {
+  width: 100%;
 }
 
 @media(min-width: $min-sm-width) {
   .TextSettings-formGroup label {
     display: inline-block;
-  }
-
-  .TextSettings-formGroup {
-    select, input, textarea {
-      width: auto;
-    }
   }
 
   .TextSettings-formGroupColumn{
