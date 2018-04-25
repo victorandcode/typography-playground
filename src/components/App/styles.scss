@@ -8,7 +8,11 @@
 }
 
 .App__contentWrapper {
-  padding: 1em 1em 4em 1em;
+  padding: 1em 1em 6em 1em;
+}
+
+.App__overflowHidden {
+  overflow: hidden;
 }
 
 .App__headerTitle {

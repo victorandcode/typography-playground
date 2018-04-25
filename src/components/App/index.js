@@ -19,6 +19,7 @@ class App extends Component {
     this.getSettingsContentClassNames = this.getSettingsContentClassNames.bind(this);
     this.updateSettings = this.updateSettings.bind(this);
     this.toggleShowingSettings = this.toggleShowingSettings.bind(this);
+    this.getContentWrapperClassNames = this.getContentWrapperClassNames.bind(this);
   }
 
   getUpdateHandlers(settingsKey, textKey) {
@@ -74,6 +75,14 @@ class App extends Component {
     return classes.join(' ');
   }
 
+  getContentWrapperClassNames() {
+    let classes = ['App__contentWrapper'];
+    if(this.state.showingSettings) {
+      classes.push('App__overflowHidden');
+    }
+    return classes.join(' ');
+  }
+
   updateSettings(newSettings) {
     this.setState({
       ...Object.assign(
@@ -91,7 +100,7 @@ class App extends Component {
     return (
       <div className="App">
         <main>
-          <section className="App__contentWrapper">
+          <section className={this.getContentWrapperClassNames()}>
             <header>
               <h1 className="App__headerTitle">Type Playground</h1>
             </header>
