@@ -1,9 +1,17 @@
-*{-webkit-box-sizing:border-box;box-sizing:border-box}body{margin:0;padding:1em;font-family:sans-serif}.App {
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{font-family:Exo,sans-serif;line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:"";content:none}table{border-collapse:collapse;border-spacing:0}*{-webkit-box-sizing:border-box;box-sizing:border-box}.App {
   width: 60em;
   max-width: 100%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  overflow-x: hidden; }
+
+.App__headerTitle {
+  font-size: 2em;
+  font-weight: 700;
+  line-height: 2em; }
 
 .App__settingsTitle {
+  font-size: 1.5em;
+  font-weight: 700;
   text-align: center; }
 
 .App__btnOpenSettings {
@@ -19,6 +27,7 @@
 .App__btnCloseSettings {
   background: none;
   border: none;
+  cursor: pointer;
   font-size: 2em;
   position: absolute;
   right: 0;
@@ -53,6 +62,10 @@
     min-width: 300px;
     padding: 1em;
     width: 50%; } }
+.TextSettings__title {
+  font-size: 1.5em;
+  line-height: 2em; }
+
 .TextSettings input[type=range],
 .TextSettings input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
@@ -97,14 +110,22 @@
   line-height: 2em; }
 
 .TextSettings-formGroup label {
-  display: inline-block; }
+  display: block; }
 
-.TextSettings-formGroupColumn {
-  width: 50%; }
+.TextSettings-formGroup select, .TextSettings-formGroup input, .TextSettings-formGroup textarea {
+  width: 100%; }
+
+@media (min-width: 768px) {
+  .TextSettings-formGroup label {
+    display: inline-block; }
+  .TextSettings-formGroup select, .TextSettings-formGroup input, .TextSettings-formGroup textarea {
+    width: auto; }
+  .TextSettings-formGroupColumn {
+    width: 50%; } }
 .CSSExport {
   display: inline-block; }
 
-.CSSExport__cta {
+.CSSExport__ctaWaiting {
   background: rgba(255, 255, 255, 0.8);
   border: 1px solid #2e2e2e;
   border-radius: 5px;
@@ -116,7 +137,7 @@
 .CSSExport__innerText {
   margin-left: 5px; }
 
-.CSSExport__successMsg {
+.CSSExport__ctaActive {
   background: rgba(0, 0, 0, 0.7);
   border: 1px solid #fff;
   border-radius: 5px;
@@ -124,15 +145,20 @@
   left: 100%;
   margin-left: 5px;
   padding: 4px; }
-.PrebuiltSettings {
+.PrebuiltSetting {
   background: #fff;
   border: 1px solid #000;
   border-radius: 5px;
+  cursor: pointer;
   font-weight: 700;
   padding: 8px;
   text-align: center; }
+.PrebuiltSettings__title {
+  font-size: 1.5em;
+  line-height: 2em; }
+
 .PrebuiltSettings__setting {
   display: inline-block;
   margin-right: 10px; }
 
-/*# sourceMappingURL=main.29405084.css.map*/
+/*# sourceMappingURL=main.c69638b3.css.map*/
