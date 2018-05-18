@@ -13,7 +13,7 @@ Simple playground to preview combinations of font related styles
 
 ## Technologies used
 - React.js with ejected create-react-app template
-- SASS
+- SASS (BEM for naming classes)
 
 ## Requirements
 - npm
@@ -23,3 +23,6 @@ Simple playground to preview combinations of font related styles
 npm install
 npm start
 ```
+
+## Making changes
+Always run ```npm run prettier```

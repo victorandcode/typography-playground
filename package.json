@@ -54,7 +54,8 @@
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "prettier": ".\\node_modules\\.bin\\prettier.cmd --config .prettierrc --write \"./src/**/*.js\""
   },
   "jest": {
     "collectCoverageFrom": [
@@ -97,5 +98,8 @@
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "devDependencies": {
+    "prettier": "1.12.1"
   }
 }
