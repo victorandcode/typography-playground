@@ -120,12 +120,11 @@ class App extends Component {
                 className={this.getSettingsContentClassNames()}
                 >
                 {!this.state.showingSettings && 
-                  <div>
-                    <h2 className="App__settingsTitle">SETTINGS</h2>
                     <button 
                       className="App__btnOpenSettings"
-                      onClick={() => this.toggleShowingSettings(true)}/>
-                  </div>
+                      onClick={() => this.toggleShowingSettings(true)}>
+                      SETTINGS
+                    </button>
                 }
                 {this.state.showingSettings && 
                   <div>
