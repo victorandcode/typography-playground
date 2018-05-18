@@ -2,97 +2,97 @@ export const SETTINGS_DEFAULT = {
   titleSettings: {
     fontSize: {
       value: 4,
-      unit: 'em'
+      unit: "em"
     },
-    fontFamily: 'Montserrat',
+    fontFamily: "Montserrat",
     letterSpacing: {
       value: 0,
-      unit: 'em'
+      unit: "em"
     },
     lineHeight: {
       value: 1.4,
-      unit: 'em'
-    },
+      unit: "em"
+    }
   },
   bodySettings: {
     fontSize: {
       value: 1.5,
-      unit: 'em'
+      unit: "em"
     },
-    fontFamily: 'Montserrat',
+    fontFamily: "Montserrat",
     letterSpacing: {
       value: 0,
-      unit: 'em'
+      unit: "em"
     },
     lineHeight: {
       value: 1.5,
-      unit: 'em'
-    },
+      unit: "em"
+    }
   }
-}
+};
 
 export const SETTINGS_FANCY = {
   titleSettings: {
     fontSize: {
       value: 4,
-      unit: 'em'
+      unit: "em"
     },
-    fontFamily: 'Abril Fatface',
+    fontFamily: "Abril Fatface",
     letterSpacing: {
       value: 0,
-      unit: 'em'
+      unit: "em"
     },
     lineHeight: {
       value: 1.4,
-      unit: 'em'
-    },
+      unit: "em"
+    }
   },
   bodySettings: {
     fontSize: {
       value: 1.5,
-      unit: 'em'
+      unit: "em"
     },
-    fontFamily: 'Raleway',
+    fontFamily: "Raleway",
     letterSpacing: {
       value: 0,
-      unit: 'em'
+      unit: "em"
     },
     lineHeight: {
       value: 1.5,
-      unit: 'em'
-    },
+      unit: "em"
+    }
   }
-}
+};
 
 export const SETTINGS_FINEPRINT = {
   titleSettings: {
     fontSize: {
       value: 4,
-      unit: 'em'
+      unit: "em"
     },
-    fontFamily: 'Lato',
+    fontFamily: "Lato",
     letterSpacing: {
       value: 0,
-      unit: 'em'
+      unit: "em"
     },
     lineHeight: {
       value: 1.4,
-      unit: 'em'
-    },
+      unit: "em"
+    }
   },
   bodySettings: {
     fontSize: {
-      value: .5,
-      unit: 'em'
+      value: 0.5,
+      unit: "em"
     },
-    fontFamily: 'Abril Fatface',
+    fontFamily: "Abril Fatface",
     letterSpacing: {
       value: 0.2,
-      unit: 'em'
+      unit: "em"
     },
     lineHeight: {
       value: 1.5,
-      unit: 'em'
-    },
+      unit: "em"
+    }
   }
-}
+};
